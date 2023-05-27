@@ -8,7 +8,7 @@ const melterConfig: MelterConfig = {
   plugins: [new LiquidXPlugin()],
 };
 
-export default function run() {
+export default function run(): Promise<CompilationStats> {
   return new Promise((resolve) => {
     const compiler = melter(melterConfig);
 

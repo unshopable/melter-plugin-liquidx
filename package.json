@@ -1,0 +1,55 @@
+{
+  "name": "@unshopable/melter-plugin-liquidx",
+  "version": "0.1.0-alpha.2",
+  "description": "A melter plugin which renders LiquidX to Liquid",
+  "keywords": [
+    "liquid",
+    "shopify",
+    "shopify-theme",
+    "melter",
+    "liquidx",
+    "melter-plugin"
+  ],
+  "author": "",
+  "license": "MIT",
+  "repository": "unshopable/melter-plugin-liquidx",
+  "homepage": "https://github.com/unshopable/melter-plugin-liquidx",
+  "bugs": "https://github.com/unshopable/melter-plugin-liquidx/issues",
+  "private": false,
+  "type": "module",
+  "main": "dist/index.cjs",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "require": "./dist/index.cjs",
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "test": "jest",
+    "build": "tsup",
+    "build:fix": "esno scripts/postbuild.ts",
+    "prepublishOnly": "npm run build"
+  },
+  "peerDependencies": {
+    "@unshopable/melter": "^0.1.0-alpha.32"
+  },
+  "dependencies": {
+    "@unshopable/liquidx": "^0.1.0-alpha.4"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.1",
+    "esno": "^0.16.3",
+    "jest": "^29.5.0",
+    "prettier": "^2.8.8",
+    "ts-jest": "^29.1.0",
+    "ts-node": "^10.9.1",
+    "tsup": "^6.7.0",
+    "typescript": "^4.9.5"
+  }
+}

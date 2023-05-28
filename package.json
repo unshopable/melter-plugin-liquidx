@@ -1,8 +1,15 @@
 {
   "name": "@unshopable/melter-plugin-liquidx",
-  "version": "0.1.0-alpha.1",
-  "description": "",
-  "keywords": [],
+  "version": "0.1.0-alpha.2",
+  "description": "A melter plugin which renders LiquidX to Liquid",
+  "keywords": [
+    "liquid",
+    "shopify",
+    "shopify-theme",
+    "melter",
+    "liquidx",
+    "melter-plugin"
+  ],
   "author": "",
   "license": "MIT",
   "repository": "unshopable/melter-plugin-liquidx",
